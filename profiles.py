@@ -32,9 +32,10 @@ while True :
     tournament = int(input("Salut ! Tu souhaite créer un tournoi de 4, 8 ou 16 participants : "))
     if tournament == 4 or tournament == 8 or tournament == 16 :
        break
-    print (" ")
-    print ("Désolé mais le nombre n'est pas correct,recommence.")
-    print (" ")
+    else :
+        print (" ")
+        print ("Désolé mais le nombre n'est pas correct,recommence.")
+        print (" ")
 
 
 #Choix du nombres de joueurs (humain).
