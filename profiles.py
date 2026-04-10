@@ -51,5 +51,3 @@ while True :
         break
     else :
         print ("Le nombre est trop élevés, recommence ou écrit STOP pour arrêter.")
-
-name = (all_player(nb_players, tournament))
