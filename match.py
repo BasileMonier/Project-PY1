@@ -45,10 +45,25 @@ def all_game (p1, p2) :
     print (f"{loser['name']} à perdu le match et est donc éliminé du tournoi !")
     return winner
 
+
+def tournament_start(players):
+    tour = 1
+    
+    while len(players) > 1:
+        players_next_round = []
+
+        for i in range(0, len(players), 2):
+            r = all_game(players[i], players[i + 1])
+            players_next_round.append(r)
+        
+        players = players_next_round
+        tour += 1
+
+    print(f" {players[0]['name']} remporte la finale, il est le grand champion du tournoi ! ")
+    return players[0]
+
+
 if __name__ == "__main__":
     players = tournament_choice()
     if players:
-        # For simplicity, just play between first two players
-        winner = all_game(players[0], players[1])
-        print(f"Final winner: {winner['name']}")
-
+        tournament_start(players)
