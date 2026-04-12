@@ -34,6 +34,8 @@ def game_1 (p1, p2) :
 def all_game (p1, p2) :
     p1_score = 0
     p2_score = 0
+    print(f"\n {p1['name']} contre {p2['name']}")
+
     while p1_score < 3 and p2_score < 3 :
         game = game_1(p1, p2)
         if game == p1 :
@@ -42,14 +44,21 @@ def all_game (p1, p2) :
             p2_score += 1
         if game == None :
             continue
+        print(f"\n Score : {p1['name']} : {p1_score} - {p2_score} : {p2['name']}")
+        print("_"*70)
+
     winner = p1 if p1_score == 3 else p2
     loser = p2 if winner is p1 else p1
     print (f"\n {winner['name']} a gagné le match !")
     print (f"\n {loser['name']} a perdu le match et est donc éliminé du tournoi !")
+    print("_"*70)
     return winner
 
 # Déroulement du tournoi, les joueurs s'affontent par pairs, la fonction fait une liste avec les gagnants de chaque match, jusqu'à ce qu'il ne reste qu'un seul joueur, le vainqueur du tournoi.
 def tournament_start(players):
+    print("_"*70)
+    print(f"\n Le tournoi commence avec {len(players)} joueurs. Que le meilleur gagne !")
+    print("_"*70)
     tour = 1
     
     while len(players) > 1:
@@ -62,7 +71,9 @@ def tournament_start(players):
         players = players_next_round
         tour += 1
 
+    print("\n" + "="*70)
     print(f"\n {players[0]['name']} remporte la finale, il est le grand champion du tournoi ! ")
+    print("\n" + "="*70)
     return players[0]
 
 # Lancement du tournoi, demande la taille, le nom et le type de joueur.
