@@ -1,6 +1,7 @@
 from profiles import tournament_choice
 import random
 
+# Choix de la personne, soit humain soit IA, et verifie que le choix est correct.
 def choice(person) :
     if person["human"] == True :
         while True :
@@ -14,6 +15,7 @@ def choice(person) :
         ia_choice = random.choice (["Pierre", "Feuille", "Ciseaux"])
         return ia_choice
 
+# Fonction déroulement d'une partie, affiche le gagnant ou une égalité, et retourne le gagnant.
 def game_1 (p1, p2) :
     p1_play = choice(p1)
     p2_play = choice(p2)
@@ -28,6 +30,7 @@ def game_1 (p1, p2) :
         print ("Égalité, vous avez fais pareil.")
         return None
 
+# Règle du match, le premier à gagner 3 manches l'emporte, affiche le gagnant et le perdant, et retourne le gagnant.
 def all_game (p1, p2) :
     p1_score = 0
     p2_score = 0
@@ -45,7 +48,7 @@ def all_game (p1, p2) :
     print (f"\n {loser['name']} a perdu le match et est donc éliminé du tournoi !")
     return winner
 
-
+# Déroulement du tournoi, les joueurs s'affontent par pairs, la fonction fait une liste avec les gagnants de chaque match, jusqu'à ce qu'il ne reste qu'un seul joueur, le vainqueur du tournoi.
 def tournament_start(players):
     tour = 1
     
@@ -62,7 +65,7 @@ def tournament_start(players):
     print(f"\n {players[0]['name']} remporte la finale, il est le grand champion du tournoi ! ")
     return players[0]
 
-
+# Lancement du tournoi, demande la taille, le nom et le type de joueur.
 if __name__ == "__main__":
     players = tournament_choice()
     if players:

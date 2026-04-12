@@ -28,7 +28,7 @@ def all_player (nb_players, tournament_size) :
     return players
 
 
-#Choix du tournoi.
+# Choix de la taille du tournoi, du nombre de joueurs humains, et lancement du tournoi.
 
 def tournament_choice():
     while True :
