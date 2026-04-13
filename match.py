@@ -5,7 +5,7 @@ import random
 def choice(person) :
     if person["human"] == True :
         while True :
-            print ("\n Choisissez entre Pierre, Feuille et Ciseaux.")
+            print ("\n Choisissez entre 🗿  Pierre, 🍃  Feuille et ✂️  Ciseaux.")
             player_choice = input("> ")
             print ("_" * 70)
             if player_choice in ["Pierre", "Feuille", "Ciseaux"] :
@@ -66,7 +66,7 @@ def all_game (p1, p2) :
 # Déroulement du tournoi, les joueurs s'affontent par pairs, la fonction fait une liste avec les gagnants de chaque match, jusqu'à ce qu'il ne reste qu'un seul joueur, le vainqueur du tournoi.
 def tournament_start(players):
     print("_"*70)
-    print(f"\n Le tournoi commence avec {len(players)} joueurs. Que le meilleur gagne !")
+    print(f"\n🏆 Le tournoi commence avec {len(players)} joueurs. Que le meilleur gagne !  🏆")
     print("_"*70)
     tour = 1
     
@@ -81,7 +81,7 @@ def tournament_start(players):
         tour += 1
 
     print("\n" + "="*70)
-    print(f"\n {players[0]['name']} remporte la finale, il est le grand champion du tournoi ! ")
+    print(f"\n👑 {players[0]['name']} remporte la finale, il est le grand champion du tournoi !  👑")
     print("\n" + "="*70)
     return players[0]
 
