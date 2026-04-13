@@ -33,7 +33,8 @@ def all_player (nb_players, tournament_size) :
 def tournament_choice():
     while True :
         try:
-            tournament = int(input("Salut ! Tu souhaite créer un tournoi de 4, 8 ou 16 participants ? : "))
+            print ("Salut ! Tu souhaite créer un tournoi de 4, 8 ou 16 participants ?")
+            tournament = int(input("> "))
             if tournament == 4 or tournament == 8 or tournament == 16:
                 break
             print (" ")
@@ -44,7 +45,8 @@ def tournament_choice():
     
     print (f"Très bien ! Il y aura donc {tournament} joueurs !")
     while True :
-        saisie = (input("Combien de joueur (humain) y'aura t'il (ou STOP pour quitter) : "))
+        print ("Combien de joueur (humain) y'aura t'il ? (ou écrit STOP pour quitter)")
+        saisie = input("> ")
         if saisie == "STOP":
             break
         try:
