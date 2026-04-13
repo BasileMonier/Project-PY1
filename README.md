@@ -1,9 +1,9 @@
-# Tournoi Pierre-Feuille-Ciseaux
+# Pierre 🗿 Feuille 🍃 Ciseaux ✂️
 
 
 ## -- Description --
 
-Le projet est donc un tournoi de Pierre-Feuille-Ciseaux pouvant être être de 4, 8 ou 16 joueurs (humaine ou ia). Chaque match se joue en 3 manche gagnantes. À la fin du tournoi, un bracket ainsi qu'un podium sont affichés.
+Le projet est un tournoi de Pierre-Feuille-Ciseaux pouvant être être de 4, 8 ou 16 joueurs (humaine ou ia). Chaque match se joue en 3 manche gagnantes. À la fin du tournoi, un bracket ainsi qu'un podium sont affichés.
 
 
 ## -- Prérequis --
