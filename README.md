@@ -1,4 +1,4 @@
-# Tournoi Pierre-Feuille-Ciseaux
+# 😀Tournoi Pierre-Feuille-Ciseaux
 
 
 ## -- Description --
