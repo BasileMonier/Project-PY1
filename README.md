@@ -1,4 +1,4 @@
-# 😀Tournoi Pierre-Feuille-Ciseaux
+# Tournoi Pierre-Feuille-Ciseaux
 
 
 ## -- Description --
@@ -13,5 +13,5 @@ Pour ce qui est des prérequis, il est uniquement nécessaire d'avoir Python à 
 
 ## -- Répartition des rôles --
 
-***Carlo*** : Affichage du bracket ainsi que du podium final. \
+***Carlo*** : Structure du bracket à élimination directe et afficache du vainqueur. \
 ***Basile*** : Création des profiles des joueurs et logique des matchs.
